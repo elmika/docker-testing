@@ -6,7 +6,9 @@ var_dump($inexistent_message);
 
 
 exec("free -mtl", $output);
-print_r($output);
+print_r("<p>".$output."</p>");
+
+print_r("<p>".memory_get_usage().</p>);
 
 
 // syntax error
